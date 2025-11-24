@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Happy Birthday Drakshayani</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to bottom right, #ffb6c1, #ffe4e1);
+            font-family: 'Segoe UI', sans-serif;
+            text-align: center;
+            color: #800000;
+        }
+
+        .container {
+            padding: 40px 20px;
+        }
+
+        h1 {
+            font-size: 3em;
+            margin-bottom: 10px;
+        }
+
+        p {
+            font-size: 1.2em;
+            max-width: 600px;
+            margin: 20px auto;
+        }
+
+        .heart {
+            font-size: 2em;
+            color: red;
+            animation: pulse 1.5s infinite;
+        }
+
+        .button {
+            background-color: #ff69b4;
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            font-size: 1em;
+            border-radius: 25px;
+            cursor: pointer;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+            transition: all 0.3s ease;
+            margin-top: 20px;
+        }
+
+        .button:hover {
+            background-color: #ff1493;
+        }
+
+        /* transform : scale(1.05); */
+
+
+        @keyframes pulse {
+            0% {
+                transform: scale(1);
+            }
+
+            50% {
+                transform: scale(1.2);
+            }
+
+            100% {
+                transform: scale(1);
+            }
+        }
+
+
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 10;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.6);
+        }
+
+        .modal-content {
+            background: #fff0f5;
+            margin: 15% auto;
+            padding: 30px;
+            border-radius: 20px;
+            width: 80%;
+            max-width: 400px;
+            text-align: center;
+            color: #800000;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+            animation: fadeIn 0.4s ease;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .close {
+            margin-top: 20px;
+            background-color: #ff69b4;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 15px;
+            cursor: pointer;
+        }
+
+        .close:hover {
+            background-color: #ff1493;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Happy Birthday Drakshayani 🎉</h1>
+        <div class="heart">❤️</div>
+        <p>On this beautiful day, someone truly special was born, who is also called as my "Bauni".</p>
+        </style>
+        <p>Thank you for being with me — it really means the world.</p>
+        <p>If you click the button below, you’ll be cursed to live with me forever 💖</p>
+        <button class="button" onclick="showModal()">I'm ready</button>
+    </div>
+
+
+    <div class="modal" id="myModal">
+        <div class="modal-content">
+            <h2>Yay! 💕</h2>
+            <p>Now You have officially Accepted to be with me forever and ever 😘</p>
+            <p>U Can't Go Back On Your Word Now😁</p>
+            <p>So Starting Today Lets make Each And Everday Day Beautifull As You Are🥰</p>
+            <p>Leave a cute little message for me 😳👇</p>
+            <form action="https://formspree.io/f/xeodvopo" method="POST">
+                <textarea name="message" rows="4" placeholder="Your message..." required
+                    style="width: 100%; padding: 10px; border-radius: 10px; resize: none;"></textarea>
+
+                <button type="submit" class="close" style="margin-top: 15px;" onclick="closeModal()">Send 💌</button>
+            </form>
+
+        </div>
+    </div>
+
+    <script>
+        function showModal() {
+            document.getElementById("myModal").style.display = "block";
+        }
+
+        function closeModal() {
+            document.getElementById("myModal").style.display = "none";
+        }
+    </script>
+</body>
+
+</html>
